@@ -1,0 +1,11 @@
+--- origsrc/dates-0.4.7/src/Makefile.am	2009-03-12 12:20:33.000000000 -0500
++++ src/dates-0.4.7/src/Makefile.am	2009-06-11 01:45:21.541753900 -0500
+@@ -35,7 +35,7 @@ dates_SOURCES = $(platform) 	\
+ 	gconf-bridge.h		\
+ 	gconf-bridge.c
+ 
+-dates_LDADD = $(DATES_LIBS) libgtkdatesview.la
++dates_LDADD = libgtkdatesview.la $(DATES_LIBS)
+ 
+ if USE_OWL
+ dates_LDADD += $(top_builddir)/libowl/libowl.la

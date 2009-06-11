@@ -1,0 +1,5 @@
+inherit gnome2
+
+HOMEPAGE="http://www.pimlico-project.org/"
+
+PATCH_URI="0.4.7-as-needed.patch"
