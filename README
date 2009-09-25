@@ -4,14 +4,14 @@ Dates is a small, lightweight calendar, featuring an innovative,
 unified, zooming view and a simple GTK+ interface.
 
 Runtime requirements:
-  cygwin-1.7.0-52
+  cygwin-1.7.0-61
   libecal1.2_7-2.26.3-1
   libedataserver1.2_11-2.26.3-1
   libgcc1-4.3.2-2
   libgconf2_4-2.26.2-1
-  libgdk_pixbuf2.0_0-2.16.5-1
-  libglib2.0_0-2.20.4-1
-  libgtk2.0_0-2.16.5-1
+  libgdk_pixbuf2.0_0-2.16.6-1
+  libglib2.0_0-2.20.5-1
+  libgtk2.0_0-2.16.6-1
   libical0-0.43-10
   libintl8-0.17-11
   libpango1.0_0-1.24.5-1
@@ -20,9 +20,9 @@ Build requirements:
 (besides corresponding -devel packages)
   autoconf2.5-2.63-10
   automake1.10-1.10.2-10
-  binutils-20080624-2
-  cygport-0.9.8-1
-  gawk-3.1.6-2
+  binutils-2.19.51-1
+  cygport-0.9.9-1
+  gawk-3.1.7-1
   gcc4-core-4.3.2-2
   gnome-common-2.26.0-2
   intltool-0.40.6-1
@@ -40,58 +40,22 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack dates-0.4.8-X-src.tar.bz2
+  unpack dates-0.4.10-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./dates-0.4.8-X.cygport all
+  cygport ./dates-0.4.10-X.cygport all
 
 This will create:
-  /usr/src/dates-0.4.8-X-src.tar.bz2
-  /usr/src/dates-0.4.8-X.tar.bz2
+  /usr/src/dates-0.4.10-X-src.tar.bz2
+  /usr/src/dates-0.4.10-X.tar.bz2
 
 -------------------------------------------
 
-Files included in the binary package:
-
-  /etc/postinstall/dates.sh
-  /usr/bin/dates.exe
-  /usr/share/applications/dates.desktop
-  /usr/share/dates/oh-about-logo.png
-  /usr/share/doc/dates/COPYING
-  /usr/share/doc/dates/ChangeLog
-  /usr/share/doc/dates/LICENSE
-  /usr/share/doc/dates/NEWS
-  /usr/share/doc/dates/README
-  /usr/share/icons/hicolor/16x16/apps/dates.png
-  /usr/share/icons/hicolor/22x22/apps/dates.png
-  /usr/share/icons/hicolor/24x24/apps/dates.png
-  /usr/share/icons/hicolor/26x26/apps/dates.png
-  /usr/share/icons/hicolor/32x32/apps/dates.png
-  /usr/share/icons/hicolor/48x48/apps/dates.png
-  /usr/share/icons/hicolor/64x64/apps/dates.png
-  /usr/share/icons/hicolor/scalable/apps/dates.svg
-  /usr/share/locale/ca/LC_MESSAGES/Dates.mo
-  /usr/share/locale/da/LC_MESSAGES/Dates.mo
-  /usr/share/locale/de/LC_MESSAGES/Dates.mo
-  /usr/share/locale/en_GB/LC_MESSAGES/Dates.mo
-  /usr/share/locale/es/LC_MESSAGES/Dates.mo
-  /usr/share/locale/et/LC_MESSAGES/Dates.mo
-  /usr/share/locale/eu/LC_MESSAGES/Dates.mo
-  /usr/share/locale/fi/LC_MESSAGES/Dates.mo
-  /usr/share/locale/fr/LC_MESSAGES/Dates.mo
-  /usr/share/locale/it/LC_MESSAGES/Dates.mo
-  /usr/share/locale/nb/LC_MESSAGES/Dates.mo
-  /usr/share/locale/nl/LC_MESSAGES/Dates.mo
-  /usr/share/locale/pl/LC_MESSAGES/Dates.mo
-  /usr/share/locale/pt_BR/LC_MESSAGES/Dates.mo
-  /usr/share/locale/ru/LC_MESSAGES/Dates.mo
-  /usr/share/locale/sv/LC_MESSAGES/Dates.mo
-  /usr/share/man/man1/dates.1.gz
-
-------------------
-
 Port Notes:
+
+----- version 0.4.10-1 -----
+Version bump.
 
 ----- version 0.4.8-1 -----
 Version bump.

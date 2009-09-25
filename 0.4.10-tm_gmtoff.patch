@@ -1,0 +1,14 @@
+--- origsrc/dates-0.4.10/src/dates_view.c	2009-08-13 05:31:32.000000000 -0500
++++ src/dates-0.4.10/src/dates_view.c	2009-09-25 02:04:45.142842000 -0500
+@@ -894,7 +894,11 @@ jana_ecal_utils_guess_location ()
+ 		zone_tz = icaltimezone_get_tznames (zone);
+ 
+ 		if (zone_tz && (strcasecmp (tzname, zone_tz) == 0) &&
++#if defined(__CYGWIN__)
++				(offset == -timezone)) {
++#else
+ 				(offset == now->tm_gmtoff)) {
++#endif
+ 			g_free (tzname);
+ 			return g_strdup (icaltimezone_get_display_name (zone));
+ 		}
