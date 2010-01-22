@@ -1,0 +1,14 @@
+--- origsrc/dates-0.4.11/src/dates_view.c	2010-01-22 03:27:07.016625100 -0600
++++ src/dates-0.4.11/src/dates_view.c	2010-01-22 03:35:53.659747400 -0600
+@@ -1509,7 +1509,11 @@ dates_view_init (DatesView *view)
+ 	priv->days = 1;
+ 	priv->months = 0;
+ 	priv->months_in_row = 4;
++#ifdef _NL_TIME_FIRST_WEEKDAY
+ 	priv->week_start = *nl_langinfo (_NL_TIME_FIRST_WEEKDAY) - 1;
++#else
++	priv->week_start = 1;
++#endif
+ 	priv->dragbox = TRUE;
+ 	priv->single_click = TRUE;
+ 	priv->double_click = FALSE;

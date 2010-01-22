@@ -3,4 +3,5 @@ inherit gnome2
 HOMEPAGE="http://www.pimlico-project.org/"
 
 PATCH_URI="0.4.7-as-needed.patch
-           0.4.10-tm_gmtoff.patch"
+           0.4.10-tm_gmtoff.patch
+           0.4.11-langinfo.patch"
