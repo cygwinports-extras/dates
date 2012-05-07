@@ -1,0 +1,9 @@
+--- origsrc/dates-0.4.11/Makefile.am	2009-10-16 12:27:21.000000000 -0500
++++ src/dates-0.4.11/Makefile.am	2012-05-06 22:53:19.900789000 -0500
+@@ -7,5 +7,5 @@ DISTCLEANFILES = intltool-extract intlto
+ MAINTAINERCLEANFILES = $(DISTCLEANFILES) aclocal.m4 compile config.guess config.sub configure depcomp install-sh ltmain.sh Makefile.in missing
+ 
+ snapshot:
+-        $(MAKE) dist distdir=$(PACKAGE)-snap`date +"%Y%m%d"`
++	$(MAKE) dist distdir=$(PACKAGE)-snap`date +"%Y%m%d"`
+ 
